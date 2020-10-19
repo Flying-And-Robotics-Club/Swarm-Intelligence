@@ -1,5 +1,4 @@
 % Create and initialize a queue.
-global server_queue;
 server_queue = queue(8);
 server_queue.enqueue([20 20]);
 server_queue.enqueue([30 20]);
