@@ -2,7 +2,7 @@ start = [5,17.5];
 rows = 35;
 columns = 70;
 vertical_wall = 10;
-global map;
+map;
 map = zeros(rows,columns);
 
 % First and last rows are made boundaries

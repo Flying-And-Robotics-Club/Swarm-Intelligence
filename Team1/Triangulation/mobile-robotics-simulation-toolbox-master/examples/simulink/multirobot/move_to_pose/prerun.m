@@ -1,3 +1,7 @@
+clear;
+clc;
+close all;
+
 % Simulation parameters
 load exampleMap
 sampleTime = 0.05;
@@ -13,3 +17,4 @@ maxRange = 25;
 
 server_gen_temp();
 mapgen();
+server_data_gen();
