@@ -1,11 +1,8 @@
-function xy = path_gen(pose)
+function xy = path_gen(pose, server_queue, map, goal)
     disp(pose);
-    global server_queue;
-    global map;
-    global goal;
     start = [pose(1) pose(2)];
-    server_queue.Depth
-    if server_queue.Depth == 0
+    server_queue.depth
+    if server_queue.depth == 0
         goal = start;
     end
 
@@ -26,8 +23,7 @@ function xy = path_gen(pose)
 end
 
 function goal = get_goal()
-global server_queue;
+    global server_queue;
     %server_queue = get_server_queue();
-    global goal;
     goal = server_queue.dequeue;
 end

@@ -11,4 +11,7 @@ server_queue.enqueue([20 05]);
 server_queue.enqueue([50 05]);
 % assignin('base', "server_queue", server_queue);
 
+global goal;
+goal = server_queue.dequeue;
+
 disp("Server Queue Generated Successfully.");
